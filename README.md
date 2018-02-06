@@ -12,3 +12,6 @@ One of key features is adding IV at the beginning of encrypted rows what provide
 
 # How to generate keystore
 `keytool -genseckey -keystore <keystore-name> -storetype jceks -storepass "<keystore-password>" -keyalg AES -keysize 128 -alias <key-alias> -keypass "<key-password>"`
+
+
+More information about AES/GCM can be found here: https://en.wikipedia.org/wiki/Galois/Counter_Mode
