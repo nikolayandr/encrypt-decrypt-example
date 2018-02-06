@@ -1,4 +1,4 @@
-package com.tmg.example;
+package com.tmg.example.aes;
 
 import java.nio.charset.StandardCharsets;
 import java.security.Key;

@@ -1,5 +1,7 @@
 package com.tmg.example;
 
+import com.tmg.example.aes.ValueEncoderDecoder;
+
 import java.io.InputStream;
 import java.security.Key;
 import java.security.KeyStore;
@@ -17,7 +19,7 @@ public class Main
 	private static final String DECRYPT = "decrypt";
 
 	/** Keystore password */
-	private static final String STORE_PASS = "DWCyAJc7yxqaACCLPekq5AEm4sUtG6BaMPYxTQ3VUeKBbW3mUAT6KWBsy9xRaKyrfKrYw9hX8YAFbRCtFK2k9SzxnwYQhEzqm2u3rcnbCnTtpKEjGzmaaQgCxgxh98hc";
+	private static final String STORE_PASS = "DWCyAJc7yxqaUtG6BaMPYx";
 
 	/** Keystore type */
 	private static final String STORE_TYPE = "JCEKS";
@@ -26,7 +28,7 @@ public class Main
 	private static final String KEY_ALIAS = "jceksaes";
 
 	/** Secret key password */
-	private static final String KEY_PASS = "9Ebc6TAZE3Bs25dGQ5HAsXtYs4cN8bXxKkSuQBuY6z258a5aHHGBYKbWusn3mxdHMvKyn6hf6J8VWNrHc96DRRHD3gwa7EFcQXpvSJHVcVxeQLDMSUWMYVzKKnQQnD5M";
+	private static final String KEY_PASS = "BYKbWusn3FcQXpvSJHVcVxeQLDMSUWMYVzKKnQQnD5M";
 
 
 	public static void main(final String[] args) throws Exception
@@ -45,7 +47,7 @@ public class Main
 				System.out.println("Encrypted value is: " + encryptedValue);
 				break;
 			case DECRYPT:
-				final String decryptedValue = valueEncoderDecoder.encodeValue(testedValue);
+				final String decryptedValue = valueEncoderDecoder.decodeValue(testedValue);
 				System.out.println("Decrypted value is: " + decryptedValue);
 				break;
 			default:
