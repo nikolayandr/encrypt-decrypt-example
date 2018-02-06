@@ -1,6 +1,6 @@
 # encrypt-decrypt-example
 The repository contains a project which shows secure but still simple way to encrypt and decrypt data using AES/GCM.
-One of key features is adding IV at the beginning of encrypted rows what provides possibilities to use random IV for encrypting values
+One of the key features is adding IV to the beginning of encrypted values what provides possibilities to use random IV for encrypting values every time when a value is encrypted. Such approach significantly improves resistance of encrypting
 
 # How to build the project
 1. Run the command `mvn package`
